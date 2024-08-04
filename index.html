@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <div class="wrapper">
+    <div class="Profile">
+     <div>
+      <img src="./assets/profilepic.png" alt="user">
+     </div>
+     <div>
+      <h2>Shivam Bharti</h2>
+     </div>
+     <div>
+      <h3>Software Developer</h3>
+     </div>
+     <div class="bottom-grp">
+        <button onclick=openmodal()  class="btn-grp">
+        <i class="fa-solid fa-share"></i>
+        <div>Share Profile</div></button>
+        <button  class="btn-grp">Follow Me</button>
+     </div>
+    </div>
+
+
+    <div class="modal">
+      <div class="uppermodal">
+        <h1>Share My Profile</h1>
+        <i onclick="closemodal()"  class="fa-sharp fa-solid fa-xmark" style="cursor: pointer;"></i>
+      </div>
+      <div class="icons-container">
+        <a href="#" class="icon" id="facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#" class="icon" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#" class="icon" id="twitter">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="icon" id="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="overlay" onclick="closemodal()"></div>
+   <script src="./index.js"></script>
+</body>
+</html>
